@@ -1,0 +1,22 @@
+{
+    "valid": [
+        {
+            "username": "validUser1",
+            "password": "validPassword1"
+        },
+        {
+            "username": "validUser2",
+            "password": "validPassword2"
+        }
+    ],
+    "invalid": [
+        {
+            "username": "invalidUser1",
+            "password": "invalidPassword1"
+        },
+        {
+            "username": "invalidUser2",
+            "password": "invalidPassword2"
+        }
+    ]
+}

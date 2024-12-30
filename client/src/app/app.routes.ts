@@ -9,7 +9,7 @@ import { InstructorDashboardComponent } from './instructor-dashboard/instructor-
 import { EditCourseComponent } from './edit-course/edit-course.component';
 
 export const appRoutes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },       
+  { path: '', redirectTo: 'login', pathMatch: 'full' },       
   { path: 'login', component: LoginComponent },               
   { path: 'dashboard', component: DashboardComponent },
   { path: 'signup', component: SignUpComponent },    
