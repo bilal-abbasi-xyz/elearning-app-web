@@ -1,0 +1,37 @@
+<div class="instructor-dashboard">
+    <h1>Instructor Dashboard</h1>
+
+    <!-- Display error message if any -->
+    <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+    </div>
+
+    <!-- Display instructor dashboard if no error -->
+    <div *ngIf="!errorMessage">
+        <p>Welcome, {{ instructorName }}!</p>
+
+        <button (click)="createCourse()" class="create-course-btn">
+            Create New Course
+        </button>
+
+        <div *ngIf="courses.length > 0" class="course-list">
+            <h2>Your Courses</h2>
+            <ul>
+                <li *ngFor="let course of courses" class="course-item">
+                    <div class="course-info">
+                        <span>{{ course.name }}</span>
+                    </div>
+                    <div class="course-actions">
+                        <button (click)="editCourse(course._id)" class="edit-btn">Edit</button>
+                        <button (click)="deleteCourse(course._id)" class="delete-btn">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Message if no courses found -->
+        <div *ngIf="courses.length === 0">
+            <p>No courses found. Create your first course!</p>
+        </div>
+    </div>
+</div>

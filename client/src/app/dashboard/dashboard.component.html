@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+    <h1>Welcome, {{ user.username }}!</h1>
+    <p>Email: {{ user.email }}</p>
+  
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+    <button (click)="goToCoursesList()">Courses List</button>
+  </div>
+  

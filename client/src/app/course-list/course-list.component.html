@@ -1,0 +1,19 @@
+<div class="course-list-container">
+  <h2>Courses List</h2>
+  
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div *ngIf="courses.length > 0" class="course-buttons">
+    <div *ngFor="let course of courses" class="course-button">
+  
+      <button (click)="viewCourse(course._id)">
+        {{ course.name }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="courses.length === 0 && !errorMessage">
+    <p>No courses available at the moment.</p>
+  </div>
+</div>

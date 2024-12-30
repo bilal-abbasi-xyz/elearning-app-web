@@ -1,0 +1,23 @@
+<div class="course-detail-container" *ngIf="course">
+    <h2>{{ course.name }} - Course Detail</h2>
+
+    <!-- Lectures Section -->
+    <div class="section-container">
+        <h3>Lectures</h3>
+        <div class="button-container">
+            <button *ngFor="let lecture of lectures" class="btn lecture-btn">
+                {{ lecture.name }}
+            </button>
+        </div>
+    </div>
+
+    <!-- Quizzes Section -->
+    <div class="section-container">
+        <h3>Quizzes</h3>
+        <div class="button-container">
+            <button *ngFor="let quiz of quizzes" class="btn quiz-btn">
+                {{ quiz.name }}
+            </button>
+        </div>
+    </div>
+</div>

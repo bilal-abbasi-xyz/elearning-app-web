@@ -1,0 +1,67 @@
+/* Course Detail Container */
+.course-detail-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Section Container for Lectures and Quizzes */
+.section-container {
+    margin-bottom: 30px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Styles for Lecture Buttons */
+.lecture-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.lecture-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.quiz-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.quiz-btn:hover {
+    background-color: #1e88e5;
+    transform: translateY(-2px);
+}

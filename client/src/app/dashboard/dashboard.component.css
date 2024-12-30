@@ -1,0 +1,62 @@
+/* Container for the whole dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f7fa;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Styling for the button */
+  button {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Optional styling for responsiveness */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 12px 24px;
+    }
+  }
+  
