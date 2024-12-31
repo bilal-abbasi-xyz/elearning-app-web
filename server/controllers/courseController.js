@@ -1,6 +1,7 @@
 const Course = require('../models/Course');
 const Quiz = require('../models/Quiz');
 const Lecture = require('../models/Lecture');
+
 const User = require('../models/User');
 
 exports.createCourse = async (req, res) => {
@@ -20,6 +21,9 @@ exports.createCourse = async (req, res) => {
       return res.status(403).json({ message: 'User is not an instructor' });
     }
 
+    if (name === '') {
+      return res.status(403).json({ message: 'Course name cannot be empty' });
+    }
     // Create a new course
     const course = new Course({
       name,

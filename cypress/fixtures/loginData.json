@@ -1,12 +1,12 @@
 {
     "valid": [
         {
-            "username": "validUser1",
-            "password": "validPassword1"
+            "username": "student1",
+            "password": "password123"
         },
         {
-            "username": "validUser2",
-            "password": "validPassword2"
+            "username": "student3",
+            "password": "password123"
         }
     ],
     "invalid": [
@@ -17,6 +17,12 @@
         {
             "username": "invalidUser2",
             "password": "invalidPassword2"
+        }
+    ],
+    "validInstructor": [
+        {
+            "username": "instructor1",
+            "password": "password123"
         }
     ]
 }

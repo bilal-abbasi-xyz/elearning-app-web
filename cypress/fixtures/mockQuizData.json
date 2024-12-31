@@ -1,0 +1,35 @@
+[
+    {
+      "_id": "quiz1",
+      "name": "Angular Basics Quiz",
+      "questions": [
+        {
+          "question": "What is Angular?",
+          "options": ["A framework", "A programming language", "A library"],
+          "answer": "A framework"
+        },
+        {
+          "question": "What is two-way data binding?",
+          "options": ["Binding data in one direction", "Binding data in two directions", "No data binding"],
+          "answer": "Binding data in two directions"
+        }
+      ]
+    },
+    {
+      "_id": "quiz2",
+      "name": "Angular Advanced Quiz",
+      "questions": [
+        {
+          "question": "What is Dependency Injection in Angular?",
+          "options": ["A way of providing services", "A new syntax", "A type of class"],
+          "answer": "A way of providing services"
+        },
+        {
+          "question": "What is a directive in Angular?",
+          "options": ["A component", "A service", "A special marker on DOM elements"],
+          "answer": "A special marker on DOM elements"
+        }
+      ]
+    }
+  ]
+  

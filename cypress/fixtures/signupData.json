@@ -1,0 +1,26 @@
+{
+    "valid": [
+        {
+            "username": "newUser1",
+            "email": "newuser1@example.com",
+            "password": "password123"
+        },
+        {
+            "username": "newUser2",
+            "email": "newuser2@example.com",
+            "password": "password123"
+        }
+    ],
+    "existing": [
+        {
+            "username": "student1",
+            "email": "student1@example.com",
+            "password": "password123"
+        },
+        {
+            "username": "student2",
+            "email": "21321@sadas.com",
+            "password": "password123"
+        }
+    ]
+}

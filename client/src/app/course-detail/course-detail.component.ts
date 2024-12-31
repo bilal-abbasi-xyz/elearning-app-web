@@ -11,10 +11,10 @@ import { CommonModule } from '@angular/common';  // Import CommonModule
   imports: [CommonModule]
 })
 export class CourseDetailComponent implements OnInit {
-  courseId: string = '';        
-  course: any = null;           
-  lectures: any[] = [];         
-  quizzes: any[] = [];          
+  courseId: string = '';
+  course: any = null;
+  lectures: any[] = [];
+  quizzes: any[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +23,7 @@ export class CourseDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.courseId = params.get('id') || '';  
+      this.courseId = params.get('id') || '';
 
       if (this.courseId) {
         this.fetchCourseDetails(this.courseId);
@@ -31,13 +31,14 @@ export class CourseDetailComponent implements OnInit {
     });
   }
 
-  
+
   fetchCourseDetails(courseId: string) {
     this.http.get<any>(`http://localhost:5000/api/courses/${courseId}`).subscribe({
       next: (data) => {
-        this.course = data;                  
-        this.lectures = data.lectures || [];  
-        this.quizzes = data.quizzes || [];    
+        this.course = data;
+        this.lectures = data.lectures || [];
+        this.quizzes = data.quizzes || [];
+        console.log("course detail data: ", data);
       },
       error: (err) => {
         console.error('Error fetching course:', err);

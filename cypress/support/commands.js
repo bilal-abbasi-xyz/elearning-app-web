@@ -33,3 +33,33 @@ Cypress.Commands.add('login', (username, password) => {
 Cypress.Commands.add('visitApp', () => {
     cy.visit('http://localhost:4200');
 });
+
+Cypress.Commands.add('signup', (username, email, password) => {
+    cy.get('[formControlName="username"]').type(username);
+    cy.get('[formControlName="email"]').type(email);
+    cy.get('[formControlName="password"]').type(password);
+    cy.get('button[type="submit"]').click();
+});
+
+Cypress.Commands.add('setAuthToken', () => {
+    const token = "mocked-jwt-token";
+    cy.window().then((window) => {
+        window.localStorage.clear();
+        window.localStorage.setItem('token', token);
+    });
+});
+
+Cypress.Commands.add('fillCourseForm', (courseName, selectedLectures, selectedQuizzes) => {
+    if (courseName) {
+        cy.get('#courseName').type(courseName);
+    } else {
+        cy.get('#courseName').clear();
+    }
+    selectedLectures.forEach((lectureId) => {
+        cy.get(`input[type="checkbox"][value="${lectureId}"]`).check();
+    });
+
+    selectedQuizzes.forEach((quizId) => {
+        cy.get(`input[type="checkbox"][value="${quizId}"]`).check();
+    });
+});

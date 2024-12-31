@@ -1,0 +1,88 @@
+{
+    "_id": "67732a6e4ebe493284cd92ce",
+    "name": "Course 1",
+    "lectures": [
+      {
+        "_id": "6770df44d8499c378bb22a45",
+        "name": "Lecture 1",
+        "content": "In this lecture, we dive deeper into JavaScript concepts such as closures, promises, and async/await."
+      },
+      {
+        "_id": "6772078716ec03c9ff87db25",
+        "name": "Introduction to JavaScript",
+        "content": "This lecture covers the basics of JavaScript including variables, functions, and loops.",
+        "createdAt": "2024-12-30T02:37:59.417Z",
+        "updatedAt": "2024-12-30T02:37:59.417Z"
+      },
+      {
+        "_id": "677208a9d8499c378bb22a49",
+        "name": "Introduction to JavaScript",
+        "content": "This lecture covers the basics of JavaScript including variables, functions, and loops."
+      }
+    ],
+    "quizzes": [
+      {
+        "_id": "6772061816ec03c9ff87daf5",
+        "name": "Quiz 1",
+        "questions": [
+          {
+            "question": "What is 2 + 2?",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "correctAnswer": "4"
+          }
+        ],
+        "createdAt": "2024-12-30T02:31:52.702Z",
+        "updatedAt": "2024-12-30T02:31:52.702Z"
+      },
+      {
+        "_id": "677206f716ec03c9ff87db0d",
+        "name": "HTML Basics",
+        "questions": [
+          {
+            "question": "What is the correct HTML element for inserting a line break?",
+            "options": [
+              "<br>",
+              "<lb>",
+              "<break>",
+              "<line>"
+            ],
+            "correctAnswer": "<br>"
+          }
+        ],
+        "createdAt": "2024-12-30T02:35:35.866Z",
+        "updatedAt": "2024-12-30T02:35:35.866Z"
+      },
+      {
+        "_id": "6772070716ec03c9ff87db19",
+        "name": "CSS Basics",
+        "questions": [
+          {
+            "question": "Which property is used to change the background color in CSS?",
+            "options": [
+              "background-color",
+              "color",
+              "bgcolor",
+              "background"
+            ],
+            "correctAnswer": "background-color"
+          }
+        ],
+        "createdAt": "2024-12-30T02:35:51.160Z",
+        "updatedAt": "2024-12-30T02:35:51.160Z"
+      }
+    ],
+    "instructor": {
+      "_id": "6771eeac7e5d8a3a7980d97b",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "role": "instructor"
+    },
+    "createdAt": "2024-12-30T02:30:00.000Z",
+    "updatedAt": "2024-12-30T02:30:00.000Z"
+  }
+  

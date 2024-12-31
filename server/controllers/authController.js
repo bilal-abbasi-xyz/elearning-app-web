@@ -24,10 +24,10 @@ exports.loginUser = async (req, res) => {
         const token = jwt.sign(
             { id: user._id },
             JWT_SECRET,
-            { expiresIn: '1h' } 
+            { expiresIn: '1h' }
         );
 
-        res.json({ token }); 
+        res.json({ token });
     } catch (err) {
         console.error(err);
         res.status(500).json({ message: 'Server error' });
@@ -75,20 +75,18 @@ exports.signUp = async (req, res) => {
 
 exports.getCurrentUser = async (req, res) => {
     try {
-      // Get the user from the request object set by the middleware
-      const user = await User.findById(req.user.id).populate('grades.course'); // Populate the course details for each grade
-      if (!user) return res.status(404).json({ message: 'User not found' });
-  
-      // Return user info along with grades
-      res.status(200).json({
-        username: user.username,
-        email: user.email,
-        role: user.role,
-        grades: user.grades,  // Include the grades in the response
-      });
+        // Get the user from the request object set by the middleware
+        const user = await User.findById(req.user.id).populate('grades.course');
+        if (!user) return res.status(404).json({ message: 'User not found' });
+
+        res.status(200).json({
+            username: user.username,
+            email: user.email,
+            role: user.role,
+            grades: user.grades,
+        });
     } catch (err) {
-      console.error(err);
-      res.status(500).json({ message: 'Server error' });
+        console.error(err);
+        res.status(500).json({ message: 'Server error' });
     }
-  };
-  
+};

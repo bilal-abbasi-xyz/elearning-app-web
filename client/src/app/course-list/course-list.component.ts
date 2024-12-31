@@ -20,12 +20,11 @@ export class CourseListComponent implements OnInit {
     this.getCourses();
   }
 
-  // Fetch courses from the backend
   getCourses() {
     this.http.get('http://localhost:5000/api/courses').subscribe({
       next: (data: any) => {
-        this.courses = data; // Assign the response to the courses array
-        console.log('Fetched courses:', this.courses); // Log the courses list
+        this.courses = data; 
+        console.log('Fetched courses:', this.courses); 
 
       },
       error: (err) => {

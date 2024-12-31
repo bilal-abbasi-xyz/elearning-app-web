@@ -1,0 +1,18 @@
+[
+    {
+      "_id": "lecture1",
+      "name": "Introduction to Angular",
+      "description": "Learn the basics of Angular framework."
+    },
+    {
+      "_id": "lecture2",
+      "name": "Advanced Angular Components",
+      "description": "Explore advanced concepts in Angular components and directives."
+    },
+    {
+      "_id": "lecture3",
+      "name": "Angular Services and Dependency Injection",
+      "description": "Understand Angular services and how to use dependency injection effectively."
+    }
+  ]
+  
