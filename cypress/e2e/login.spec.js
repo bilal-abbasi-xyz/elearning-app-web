@@ -23,6 +23,8 @@ describe('Login Functionality', () => {
                 cy.visit('/login');
             });
         });
+
+
     });
 
     it('should show error for invalid credentials', function () {

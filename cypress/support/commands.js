@@ -63,3 +63,4 @@ Cypress.Commands.add('fillCourseForm', (courseName, selectedLectures, selectedQu
         cy.get(`input[type="checkbox"][value="${quizId}"]`).check();
     });
 });
+
